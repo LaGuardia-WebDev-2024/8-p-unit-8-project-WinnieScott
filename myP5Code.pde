@@ -13,8 +13,7 @@ strokeWeight(0);
 };
 
 
-void keypressed(){
-  if()
+
 
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
@@ -22,8 +21,25 @@ drawFood(mouseX, mouseY);
 }
 
 var drawFood = function(foodX, foodY){
+
 textSize(30);
-text("🍕", foodX, foodY);}
+var randFoodNumber = random(0,11);
+var foodItem = "🍇";
+if(randFoodNumber < 1) {foodItem = "🍕";}
+else if(randFoodNumber < 2) {foodItem = "🍔";}
+else if(randFoodNumber < 3) {foodItem = "🧀";}
+else if(randFoodNumber < 4) {foodItem = "🌮";}
+else if(randFoodNumber < 5) {foodItem = "🍩";}
+else if(randFoodNumber < 6) {foodItem = "🥧";}
+else if(randFoodNumber < 7) {foodItem = "🍓";}
+else if(randFoodNumber < 8) {foodItem = "🍏";}
+else if(randFoodNumber < 9) {foodItem = "🧍‍♀️";}
+else if(randFoodNumber < 10) {foodItem = "🧍‍♂️";}
+
+console.log(randFoodNumber);
+
+text(foodItem, foodX, foodY);
+}
 
 //🟡drawFish Function - will run when called
 var drawPige = function(PigeX, PigeY){
