@@ -7,6 +7,7 @@ setup = function() {
 
 //🟢draw Function - will run on repeat
 draw = function(){
+drawHat();
 drawPige(200, 500)
 strokeWeight(0);
   noStroke()
@@ -14,11 +15,12 @@ strokeWeight(0);
 
 
 
-
+//var count = 0;
 //🟢mouseClicked Function - will run when mouse is clicked
 mouseClicked = function(){
 drawFood(mouseX, mouseY);
-}
+};
+
 
 var drawFood = function(foodX, foodY){
 
@@ -39,10 +41,17 @@ else if(randFoodNumber < 10) {foodItem = "🧍‍♂️";}
 console.log(randFoodNumber);
 
 text(foodItem, foodX, foodY);
-}
+};
 
 //🟡drawFish Function - will run when called
+
+var drawHat = function(hatX, hatY){
+textSize(50)
+//text("👒" 200, 50)
+};
 var drawPige = function(PigeX, PigeY){
+
+
   //neck
 fill(107, 129, 143)
 quad(308, 101, 298, 187, 195, 177, 282, 89) 
@@ -129,7 +138,6 @@ line(223, 274, 235, 297)
 line(243, 305, 235, 297)
 line(256, 299, 235, 297)
 };
-
 
 
 
