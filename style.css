@@ -1,18 +1,29 @@
 @font-face{
   font-family: water;
   src: url("https://cdn.glitch.global/97f7bbb3-2cd9-4b34-bbf2-d0a28c71f10b/Water%20Park.ttf?v=1738683075854");
+.racing-sans-one-regular {
+  .racing-sans-one-regular {
+  font-family: "Racing Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+  font-weight: 400;
+  font-style: normal;
+}
+
 }
 
 body {
-  background-color: aliceblue;
+  background-color: rgb(34, 114, 18);
   text-align: center;
-  color: navy;
+  color: rgb(198, 198, 204);
   margin: auto;
-  font-family: water;
+  font-family: "Racing Sans One", sans-serif;
 }
 
 h1{
-  font-size: 30px;
+  font-size: 50px;
 }
 
 #myCanvas {
@@ -20,6 +31,10 @@ h1{
   background-size: 600px 400px;
   border-radius: 300px;
   border: 5px solid white;
+}
+
+p{
+  font-size: 30px;
 }
 
 
