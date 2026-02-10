@@ -138,7 +138,7 @@ line(256, 299, 235, 297)
 };
 
 var drawHat = function(hatX, hatY){
-  rotate(-.10)
+  rotate(-.20)
 textSize(50)
-text("👒", 260, 93)};
+text("👒", 240, 125)};
 
